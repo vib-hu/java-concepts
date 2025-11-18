@@ -8,6 +8,7 @@ public class AtomicExample {
         Thread[] threads = new Thread[5000];
         for(int i=0;i<5000;i++){
             threads[i] = new Thread(atomic);
+
             threads[i].start();
         }
         for(Thread t : threads){
