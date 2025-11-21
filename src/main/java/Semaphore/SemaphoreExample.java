@@ -1,6 +1,7 @@
 package Semaphore;
 
 import java.util.ArrayDeque;
+import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.Semaphore;
 
 public class SemaphoreExample {

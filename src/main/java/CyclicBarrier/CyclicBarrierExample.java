@@ -31,7 +31,7 @@ class Worker implements Runnable{
         System.out.println("Running from thread: "+Thread.currentThread().getName());
         try{
             Thread.sleep(5000);
-            //How it works
+            //How it works?
             //When the last thread reaches the barrier (i.e., calls barrier.await()):
             //The barrier is considered broken (reached).
             //finalMergeTask runs immediately (on the thread that reached the barrier last).

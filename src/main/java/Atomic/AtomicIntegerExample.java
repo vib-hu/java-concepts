@@ -2,9 +2,9 @@ package Atomic;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
-public class AtomicExample {
+public class AtomicIntegerExample {
     public static void main(String[] args) throws  InterruptedException{
-        Atomic atomic = new Atomic();
+        AtomicIntegerSample atomic = new AtomicIntegerSample();
         Thread[] threads = new Thread[5000];
         for(int i=0;i<5000;i++){
             threads[i] = new Thread(atomic);
@@ -19,7 +19,7 @@ public class AtomicExample {
     }
 }
 
-class Atomic implements Runnable{
+class AtomicIntegerSample implements Runnable{
     AtomicInteger number = new AtomicInteger();
     public void run(){
         number.incrementAndGet();
